@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Example Html</title>
+		<link rel="stylesheet" href="../public/css/index_style.css" />
+		<script charset="utf-8" type="text/javascript" src="../public/js/jquery-1.8.0.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				var height = document.body.clientHeight;
+				$("body").scrollTop(height+1000);
+				
+				var document_h = document.documentElement.clientHeight-24;
+				var document_w = document.documentElement.clientWidth-90;
+				$("#friendList").css('height',document_h+'px');
+				$("#fList").css('height',(document_h-24)+'px');
+				$("#fOnOff").css('height',(document_h-24)+'px');
+				$("#index_main").css('width',document_w+'px');
+				
+				var isOff = true;
+				
+				$("#fOnOff").click(function(){
+			
+					if(isOff){
+						$("#fList").show(500);
+						$("#friendList").animate({
+							width:"260px"
+						},500);
+						$("#index_main").animate({
+							width:document_w-210
+						},400);
+						isOff = false;
+					}else{
+						$("#fList").hide(500);
+						$("#friendList").animate({
+							width:"48px"
+						},500);
+						$("#index_main").animate({
+							width:document_w
+						},600);
+						isOff = true;
+					}
+				});
+			});
+		</script>
+		<style>
+			#friendList{
+				height:400px;width:48px;float:left;border:1px solid #E8E8E8;margin:10px 0px 10px 10px;background:#FFF;
+				border-radius:5px;
+				box-shadow:0px 2px 6px #E5E5E5;
+				position:fixed;
+			}
+			#fList{
+				display:none;
+				height:100px;
+				background:#F8F8F8;
+				width:200px;
+				float:left;
+				margin:10px 0px 0px 10px;
+				border-radius:5px;
+				
+			}
+			#fOnOff{
+				width:30px;
+				background:#F8F8F8;
+				float:left;
+				margin:10px 0px 0px 10px;
+				border-radius:5px;
+				cursor:pointer;
+			}
+			#fOnOff:hover{
+				background:#F0F0F0;
+			}
+			
+			#fList .friend{
+				height:24px;
+				margin:10px 10px 0px 10px;
+				padding:4px 8px;
+				width:180;
+				background:#CCC;
+				cursor:pointer;
+			}
+			#fList .friend .friend_pic{
+				height:24px;
+				width:24px;
+				background:url(../img/avatar/qq.png);
+				float:left;
+			}
+			#fList .friend .friend_name{
+				line-height:24px;
+				color:#333;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div id="friendList">
+			<div id="fList">
+				<div class="friend">
+					<div class="friend_pic"></div>
+					<div class="friend_name">ADMIN</div>
+				</div>
+			</div>
+			<div id="fOnOff"></div>
+			
+		</div>
+		<div id="index_main" style="float:right">
+			
+			<div id="index_msg" class="msg">
+				<div class="msg_left msg_sys">
+					<div class="avatar"></div>
+					<div class="cont">
+						<div class="name">系统消息：</div>
+						<div>admin 上线了</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				<div class="msg_left">
+					<div class="avatar"></div>
+					<div class="cont">
+						<div class="name">name</div>
+						<div>Hello World !</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="msg_right">
+					<div class="avatar"></div>
+					<div class="cont">
+						<div class="name">name</div>
+						<div>Hello World !</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+		
+			</div>
+			<div class="clear"></div>
+			
+			<div id="index_send" class="msg">
+				<div id="to">
+					<span><b>To: </b></span>
+					<span class="toName">@Admin</span>
+					<span class="toName">@Admin</span>
+					<span class="toName">@Admin</span>
+				</div>
+				<div style="height:8px"></div>
+				<textarea id="msg_textarea">
+					
+				</textarea>
+				<div id="send_notice">按Ctrl+Enter发送</div>
+			</div>
+		</div>
+	</body>
+</html>

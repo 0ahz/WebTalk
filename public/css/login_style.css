@@ -1,0 +1,127 @@
+﻿/**
+ +------------------------------------------------------------------------------
+ * Author zhpengle
+ +------------------------------------------------------------------------------
+ * login_style.css
+ * 2012-10-30
+ +------------------------------------------------------------------------------
+ */
+ 
+ *{
+	padding:0;
+	margin:0;
+ }
+ body{
+	font-size:14px;
+	font-family:'微软雅黑';
+	background:#FBFBFB;
+ }
+ 
+/**
+ +------------------------------------------------------------------------------
+ * Login Page CSS
+ +------------------------------------------------------------------------------
+ */
+input:focus{
+	outline:none;
+}
+#login_main{
+	width:400px;
+	margin:0 auto;
+	border:1px solid #E8E8E8;
+	background:#FFF;
+	border-radius:5px;
+	box-shadow:0px 2px 6px #E5E5E5;
+	padding-top:10px;
+}
+#login_logo{
+	width:400px;
+	height:50px;
+	margin:10px auto;
+	margin-top:100px;
+	background:url(../img/login_logo.png);
+}
+#login_notice{
+	width:400px;
+	margin:0 auto;
+}
+#login_notice div{
+	line-height:42px;
+	padding:0px 10px;
+	color:#666;
+	border-radius:5px;
+	margin:10px 0px;
+}
+#login_notice .warning{
+	display:none;
+	background:#FFFFE0;
+	border:1px solid #E6DB55;
+	box-shadow:0px 0px 2px #E5E5E5;
+}
+#login_notice .error{
+	display:none;
+	background:#FFEBE8;
+	border:1px solid #FF9494;
+	box-shadow:0px 0px 2px #CCC;
+}
+#login_main .login_field{
+	width:320px;
+	margin:16px auto;
+}
+#login_main .login_field span{
+	font-size:16px;
+	color:#999;
+	font-weight:500;
+	padding-bottom:2px;
+}
+#login_main .login_field .input_bg{
+	height:45px;
+	width:320px;
+	background:url(../img/login_input_bg.png) no-repeat;
+}
+#login_main .login_field .input_bg input{
+	background:transparent;
+	margin:7px 2px 2px 10px;
+	height:30px;
+	width:300px;
+	border:none;
+	font-family:'微软雅黑';
+	font-size:16px;
+	font-weight:600;
+	color:#565656;
+}
+#login_main .login_field label{
+	color:#666;
+}
+#login_main .login_field .sub{
+	display:block;
+	float:right;
+	height:42px;
+	width:160px;
+	background:url(../img/login_btn.png) no-repeat;
+	border:none;
+}
+#login_main .login_field .sub:hover{
+	box-shadow:0px 0px 3px #AAA;
+}
+#login_main .login_field .sub:active{
+	box-shadow:inset 0px 2px 4px #5DB373;
+	border-radius:2px;
+}
+#login_main .login_sub{
+	margin-top:30px;
+}
+.clear{
+	clear:both;
+}
+#login_main #login_footer{
+	padding:0px 40px 10px 40px;
+	font-size:13px;
+	color:#666;
+}
+#login_main #login_footer a{
+	color:#0FA1D3
+}
+
+
+

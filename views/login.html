@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Title</title>
+		<link rel="stylesheet" href="../public/css/login_style.css" />
+		<script charset="utf-8" type="text/javascript" src=""></script>
+	</head>
+	<body>
+		<div id="login_logo"></div>
+		<div id="login_notice">
+			<div id="w" class="warning">用户名或密码不能为空</div>
+			<div id="e" class="error">用户名不存在或密码错误</div>
+		</div>
+		<div id="login_main">
+			<div id="login_form">
+				<form id="form" action="/login" method="POST">
+					<div class="login_field">
+						<span>用户名</span>
+						<div class="input_bg">
+							<input type="text" name="username" id="u" />
+						</div>
+					</div>
+					<div class="login_field">
+						<span>密码</span>
+						<div class="input_bg">
+							<input type="password" name="password" id='p' />
+						</div>
+					</div>
+					<div class="login_field login_sub">
+						<input type="checkbox" id="cb" />
+						<label for="cb">记住我的信息</label>
+						<a id="submit" class="sub" href="#" /></a>
+						<div class="clear"></div>
+					</div>
+				</form>
+			</div>
+			<div id="login_footer">
+				<span>没有账号<a href="/register">我要注册</a></span>
+			</div>
+		</div>
+	</body>
+</html>

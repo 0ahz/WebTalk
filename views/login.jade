@@ -1,0 +1,23 @@
+div#login_logo
+div#login_notice
+	div#w.warning 用户名或密码不能为空
+	div#e.error 用户名不存在或密码错误
+div#login_main
+	div#login_form
+		form#form(action='/login',method='POST')
+			div.login_field
+				span 用户名
+				div.input_bg
+					input#u(type='text',name='username')
+			div.login_field
+				span 密码
+				div.input_bg
+					input#p(type='password',name='password')
+			div.login_field.login_sub
+				input#cb(type='checkbox')
+				label(for='cb') 记住我的信息
+				a#submit.sub(href='javascript:void(0)')
+				div.clear
+	div#login_footer
+		span 没有账号
+			a(href='/register') 我要注册

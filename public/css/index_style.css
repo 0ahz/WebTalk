@@ -1,0 +1,264 @@
+/**
+ +------------------------------------------------------------------------------
+ * Author zhpengle
+ +------------------------------------------------------------------------------
+ * index_style.css
+ * 2012-11-03
+ +------------------------------------------------------------------------------
+ */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: '微软雅黑';
+    background: #FBFBFB;
+    height: 100%;
+}
+
+/**
+ +------------------------------------------------------------------------------
+ * Index Page CSS
+ +------------------------------------------------------------------------------
+ */
+
+.clear {
+    clear: both;
+
+}
+
+#friendList {
+    height: 400px;
+    width: 48px;
+    float: left;
+    border: 1px solid #E8E8E8;
+    margin: 10px 0px 10px 10px;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px #E5E5E5;
+    position: fixed;
+}
+
+#fList {
+    display: none;
+    height: 100px;
+    background: #F8F8F8;
+    width: 200px;
+    float: left;
+    margin: 10px 0px 0px 10px;
+    border-radius: 5px;
+
+}
+
+#fOnOff {
+    width: 30px;
+    background: #F8F8F8;
+    float: left;
+    margin: 10px 0px 0px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size:30px;
+    color: #999;
+    font-family: Simsun, Arial, 'Microsoft Yahei', Simsun, sans-serif;
+}
+
+#fOnOff:hover {
+    background: #F0F0F0;
+    color: #666;
+}
+
+#fList .friend {
+    height: 24px;
+    margin: 10px 10px 0px 10px;
+    padding: 4px 8px;
+    width: 160px;
+    border: 1px solid #F8F8F8;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#fList .friend:hover {
+    background: #F0F0F0;
+    border: 1px solid #E5E5E5;
+}
+
+#fList .friend .friend_pic {
+    height: 24px;
+    width: 24px;
+    background: url(../img/avatar/qq.png);
+    float: left;
+}
+
+#fList .friend .friend_name {
+    line-height: 24px;
+    color: #666;
+    width: 128px;
+    float: right;
+    font-weight: 600;
+}
+
+#fList .friend .friend_name:hover {
+    color: #333;
+}
+
+#to {
+    height: 26px;
+    background: #FFF;
+    padding: 0px 10px;
+    border-radius: 5px;
+    border: 1px solid #F5F5F5;
+    box-shadow: inset 1px 0px 1px #CCC;
+}
+
+#to .toName {
+    margin-right: 5px;
+    color: #0CC;
+    cursor: pointer;
+}
+
+#fenge {
+    height: 8px;
+}
+
+#index_main {
+    float: right;
+    border: 1px solid #E8E8E8;
+    margin: 10px;
+
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px #E5E5E5;
+}
+
+#index_title {
+    height: 40px;
+}
+
+#index_msg {
+}
+
+#index_send {
+    height: 156px;
+}
+
+#index_main .msg {
+    margin: 10px;
+    background: #F8F8F8;
+    border-radius: 5px;
+    border: 1px solid #F5F5F5;
+    box-shadow: 0px 0px 1px #EFEFEF;
+}
+
+#index_main .msg_left {
+    margin: 10px;
+}
+
+#index_main .msg_left .avatar {
+    float: left;
+    height: 44px;
+    width: 44px;
+    border-radius: 5px;
+    background: url(../img/avatar/avatar.png);
+}
+
+#index_main .msg_left .cont {
+    height: 60px;
+    background: #FFF;
+    width: 400px;
+    float: left;
+    margin-left: 10px;
+    padding: 10px;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #CCC;
+    word-wrap: break-word;
+}
+
+#index_main .msg_right {
+    margin: 10px;
+}
+
+#index_main .msg_right .avatar {
+    float: right;
+    height: 44px;
+    width: 44px;
+    border-radius: 5px;
+    background: url(../img/avatar/avatar_self.png);
+}
+
+#index_main .msg_right .cont {
+    float: right;
+    height: 60px;
+    width: 400px;
+    margin-right: 10px;
+    padding: 10px;
+    background: #8FA9C4;
+    color: #FFF;
+    border-radius: 5px;
+    border: 1px solid #8FA9C4;
+    box-shadow: -1px 1px 2px #AAA;
+    word-wrap: break-word;
+}
+
+#index_main .name {
+    font-weight: 600;
+}
+
+#index_main #index_msg .msg_sys .avatar {
+    background: url(../img/avatar/system.png);
+}
+
+#index_main #index_msg .msg_sys .cont {
+    background: #FFFFE0;
+    border: 1px solid #E6DB55;
+    border-radius: 5px;
+    height: 50px;
+    padding: 0px 10px;
+    color: #666;
+    word-wrap: break-word;
+}
+
+#index_send {
+    padding: 10px;
+    position: relative;
+}
+
+#index_send textarea {
+    width: 99%;
+    height: 110px;
+    resize: none;
+    border: 1px solid #CCC;
+    box-shadow: inset 1px 1px 2px #E5E5E5;
+    border-bottom: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+    font-family: 'Microsoft Yahei';
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-left: 10px;
+}
+
+#index_send #send_notice {
+    position: absolute;
+    height: 23px;
+    width: 120px;
+    bottom: 20px;
+    right: 20px;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
